@@ -14,11 +14,10 @@ import org.hibernate.annotations.GenericGenerator;
 @Table(name="campus")
 public class Room {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private String room_code;
 
-    @Column(name = "name")
-    private String name;
+    @Column(name = "room_name")
+    private String room_name;
 
     @Column(name = "coords")
     private String coords;
